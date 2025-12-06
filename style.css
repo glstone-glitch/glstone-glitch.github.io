@@ -1,0 +1,174 @@
+/* ======================================
+   Lxve Beauty Studio - Brown Theme CSS
+   Author: God’Iss Love Stone
+   ====================================== */
+
+/* -------- Reset -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------- Color Palette (Brown Theme) --------
+   mocha      #5c4033
+   espresso   #3b281e
+   caramel    #c79b63
+   cream      #f8f1e9
+   tan        #e6d4c3
+------------------------------------------------ */
+:root {
+    --espresso: #3b281e;
+    --mocha: #5c4033;
+    --caramel: #c79b63;
+    --cream: #f8f1e9;
+    --tan: #e6d4c3;
+}
+
+/* -------- Global -------- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+    color: var(--espresso);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* -------- Header -------- */
+header {
+    background-color: var(--espresso);
+    color: var(--cream);
+    padding: 25px 15px;
+    text-align: center;
+    border-bottom: 6px solid var(--caramel);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* -------- Navigation -------- */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cream);
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--caramel);
+    color: var(--espresso);
+}
+
+/* -------- Main Content -------- */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--tan);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(60, 40, 30, 0.2);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: var(--espresso);
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 18px;
+    font-size: 17px;
+    color: var(--espresso);
+}
+
+/* -------- Images -------- */
+.hero-img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 3px 10px rgba(59, 40, 30, 0.25);
+}
+
+/* -------- Video -------- */
+.video-container {
+    position: relative;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(59, 40, 30, 0.25);
+}
+
+/* -------- Forms -------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+input, textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid var(--espresso);
+    background-color: var(--cream);
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 14px;
+    background-color: var(--espresso);
+    color: var(--cream);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--caramel);
+    color: var(--espresso);
+}
+
+/* -------- Footer -------- */
+footer {
+    background-color: var(--espresso);
+    color: var(--cream);
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-top: 6px solid var(--caramel);
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--caramel);
+    font-weight: bold;
+}
